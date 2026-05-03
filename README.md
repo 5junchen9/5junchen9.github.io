@@ -1,6 +1,6 @@
-# Juncheng Wu Personal Homepage
+# JunCheng Wu Personal Homepage
 
-这是 `5junchen9.github.io` 的个人主页草稿，可直接用于 GitHub Pages。
+这是 `5junchen9.github.io` 的个人主页，可直接用于 GitHub Pages。
 
 ## 部署方式
 
@@ -25,6 +25,6 @@
 
 ## 后续替换内容
 
-- `index.html` 里替换个人介绍、项目标题和项目链接。
+- `index.html` 里替换个人介绍、学习方向和联系方式。
 - `styles.css` 里调整颜色、字号和版式。
 - 如果有公开仓库，可以把项目占位改成真实仓库入口。

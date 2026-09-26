@@ -121,6 +121,18 @@ h1 {
   line-height: 1.55;
 }
 
+.lede strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.rank {
+  margin: -14px 0 32px;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 800;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -177,7 +189,7 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
   border: 1px solid rgba(18, 24, 32, 0.16);
@@ -195,7 +207,8 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.about h2 {
+.about h2,
+.research h2 {
   margin-bottom: 28px;
   font-size: clamp(36px, 5.4vw, 76px);
   line-height: 0.98;
@@ -206,6 +219,81 @@ h1 {
   color: var(--muted);
   font-size: clamp(19px, 2vw, 25px);
   line-height: 1.7;
+}
+
+.education-school {
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: clamp(23px, 2.6vw, 34px);
+  font-weight: 800;
+}
+
+.about .education-rank {
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.research {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.72fr) minmax(320px, 1.28fr);
+  gap: clamp(36px, 8vw, 104px);
+  border-bottom: 1px solid var(--line);
+}
+
+.research-list {
+  border-top: 1px solid var(--line);
+}
+
+.research-list article {
+  padding: 30px 0 34px;
+  border-bottom: 1px solid var(--line);
+}
+
+.research-list h3 {
+  max-width: 760px;
+  margin-bottom: 14px;
+  font-size: clamp(23px, 2.5vw, 34px);
+  line-height: 1.22;
+}
+
+.research-list p:not(.research-meta) {
+  max-width: 760px;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.research-list .authors {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.authors strong {
+  font-weight: 900;
+}
+
+.research-meta {
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.text-link {
+  display: inline-block;
+  border-bottom: 1px solid currentColor;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.text-link:hover {
+  color: var(--ink);
 }
 
 .focus {
@@ -278,6 +366,7 @@ h1 {
 @media (max-width: 860px) {
   .hero,
   .about,
+  .research,
   .focus {
     grid-template-columns: 1fr;
   }
